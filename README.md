@@ -18,6 +18,11 @@ FitJoy is a site that provides weekly exercise plans and detailed shopping lists
 
 ### Html
 - Subscription page
+
+    1. Split them into budget tiers
+    2. Split exercise and diet
+    3. Special offers with 1 year (free merch?)
+
 - Landing page
 - Forum?
 - Contact

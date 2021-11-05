@@ -55,6 +55,10 @@ body {
 .border-black {
     border: 1px solid black !important;
 }
+/* ---------------------- Topnav styling */
+#topnav {
+    background-color: #99DE1A !important;
+}
 
 /* ---------------------- Media queries */
 

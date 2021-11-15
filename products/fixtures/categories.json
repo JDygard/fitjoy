@@ -3,14 +3,91 @@
         "pk": 1,
         "model": "products.product",
         "fields": {
-            "sku": "pp5001340155",
-            "name": "Arizona Original Bootcut Jeans",
-            "description": "Bootcut jeans in our just-right original fit are comfortable and look great too.  5-pocket style sits below waist straight fit through seat and thigh bootcut leg 18\" leg opening cotton washable imported extended sizes and washes available online only",
-            "price": 53.99,
-            "category": 6,
+            "name": "FitJoy Keyring",
+            "description": "A simple accessory to show off your FitJoy energy.",
+            "price": 3.99,
+            "category": 3,
             "rating": 4.6,
-            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-            "image": "DP0709201205510679M.jpg"
+            "image_url": "{% static 'keyring.jpeg'  %}",
+            "image": "keyring.jpeg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "name": "FitJoy Lunch Bag",
+            "description": "For packing our nutritious lunch and breakfast on the go.",
+            "price": 34.99,
+            "category": 1,
+            "rating": 3.9,
+            "image_url": "{% static 'lunchbag.jpg'  %}",
+            "image": "lunchbag.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "name": "FitJoy Shirt Mens",
+            "description": "A tshirt for the guys to show their FitJoy swagger.",
+            "price": 18.99,
+            "category": 2,
+            "rating": 4.1,
+            "image_url": "{% static 'mens_tshirt.jpeg'  %}",
+            "image": "mens_tshirt.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "name": "FitJoy Tote Bag",
+            "description": "A FitJoy branded bag to carry your groceries.",
+            "price": 8.99,
+            "category": 1,
+            "rating": 4.3,
+            "image_url": "{% static 'tote.jpg'  %}",
+            "image": "tote.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "name": "FitJoy Nalgene Water Bottle",
+            "description": "A flagship Nalgene water bottle with the FitJoy logo.",
+            "price": 22.99,
+            "category": 1,
+            "rating": 4.9,
+            "image_url": "{% static 'water_bottle.jpg'  %}",
+            "image": "water_bottle.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "name": "Bowflex Free Weights",
+            "description": "Bowflex free weights offer a complete set of workout options without taking up too much space in the house. Fits all free weight sections of FitJoy fitness plans.",
+            "price": 49.99,
+            "category": 1,
+            "rating": 4.4,
+            "image_url": "{% static 'weights.jpg'  %}",
+            "image": "weights.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "name": "FitJoy shirt women's",
+            "description": "A tshirt for you to show off your FitJoy swagger.",
+            "price": 18.99,
+            "category": 2,
+            "rating": 4.1,
+            "image_url": "{% static 'womens_tshirt.jpeg'  %}",
+            "image": "womens_tshirt.jpeg"
         }
     }
 ]

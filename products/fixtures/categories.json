@@ -34,8 +34,8 @@
             "price": 18.99,
             "category": 2,
             "rating": 4.1,
-            "image_url": "{% static 'mens_tshirt.jpeg'  %}",
-            "image": "mens_tshirt.jpg"
+            "image_url": "{% static 'mens_tshirt.jpeg' %}",
+            "image": "mens_tshirt.jpeg"
         }
     },
     {

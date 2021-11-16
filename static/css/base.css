@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url();
+    background: url("/static/images/background.jpeg");
     background-size: cover;
     height: calc(100vh - 164px);
     color: black;

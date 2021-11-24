@@ -127,11 +127,13 @@
 
 <script type="text/javascript">
     $('.update-link').click(function(e) {
+        console.log("fiss")
         var form = $(this).prev('.update-form');
         form.submit()
     })
 
     $('.remove-item').click(function(e){
+        console.log("poop")
         var csrfToken = "{{ csrf_token }}"
         var itemId = $(this).attr('id').split('remove_')[1];
         var size = $(this).data('product_size');

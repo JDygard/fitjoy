@@ -10,7 +10,7 @@ def view_bag(request):
 
 def adjust_bag(request, item_id):
     """ Adjust quantity of the specified product in the shopping bag """
-    
+
     quantity = int(request.POST.get('quantity'))
     size = None
     if 'product_size' in request.POST:
@@ -35,7 +35,6 @@ def adjust_bag(request, item_id):
 
 def remove_from_bag(request, item_id):
     """ Remove items from shopping bag """
-    print("remove")
     try:
         size = None
         if 'product_size' in request.POST:

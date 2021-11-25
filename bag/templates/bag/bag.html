@@ -48,7 +48,7 @@
                                     <p class="my-0">€{{ item.product.price }}</p>
                                 </td>
                                 <td class="py-3 w-25">
-                                    <form class="form update-form" action="{% url 'adjust_bag' item.item_id %}" method="post">
+                                    <form class="form update-form" action="{% url 'adjust_bag' item.item_id %}" method="POST">
                                         {% csrf_token %}
                                         <div class="form-group">
                                             <div class="input-group">
@@ -69,8 +69,8 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <a href="" class="update-link text-info"><small>Update</small></a>
-                                    <a href="" class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
+                                    <a class="update-link text-info"><small>Update</small></a>
+                                    <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
@@ -127,13 +127,12 @@
 
 <script type="text/javascript">
     $('.update-link').click(function(e) {
-        console.log("fiss")
         var form = $(this).prev('.update-form');
-        form.submit()
+        form.submit();
+        console.log(form)
     })
 
     $('.remove-item').click(function(e){
-        console.log("poop")
         var csrfToken = "{{ csrf_token }}"
         var itemId = $(this).attr('id').split('remove_')[1];
         var size = $(this).data('product_size');
